@@ -40,18 +40,21 @@ namespace HelloWorld
             Console.WriteLine("Hi, my name is " + name2);
 
             String choice = "y";
-            while (choice.Equals("y")) {
+            while (choice.Equals("y"))
+            {
                 Console.WriteLine("Continue?");
                 choice = Console.ReadLine();
 
 
-                if (sum > 10) {
+                if (sum > 10)
+                {
                     Console.WriteLine(">10");
                 }
-                else {
+                else
+                {
                     Console.WriteLine("<10");
                 }
             }
-        }   
+        }
     }
 }
