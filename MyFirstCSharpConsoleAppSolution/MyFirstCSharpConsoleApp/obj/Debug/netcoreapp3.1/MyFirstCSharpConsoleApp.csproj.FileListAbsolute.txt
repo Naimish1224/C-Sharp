@@ -1,0 +1,13 @@
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\bin\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.exe
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\bin\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.deps.json
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\bin\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.runtimeconfig.json
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\bin\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.runtimeconfig.dev.json
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\bin\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.dll
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\bin\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.pdb
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\obj\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.csprojAssemblyReference.cache
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\obj\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.AssemblyInfoInputs.cache
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\obj\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.AssemblyInfo.cs
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\obj\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.csproj.CoreCompileInputs.cache
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\obj\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.dll
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\obj\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.pdb
+C:\repos\c-#-instruction\MyFirstCSharpConsoleAppSolution\MyFirstCSharpConsoleApp\obj\Debug\netcoreapp3.1\MyFirstCSharpConsoleApp.genruntimeconfig.cache
