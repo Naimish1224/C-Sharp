@@ -1,0 +1,13 @@
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\bin\Debug\netcoreapp3.1\BowlingCollections.exe
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\bin\Debug\netcoreapp3.1\BowlingCollections.deps.json
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\bin\Debug\netcoreapp3.1\BowlingCollections.runtimeconfig.json
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\bin\Debug\netcoreapp3.1\BowlingCollections.runtimeconfig.dev.json
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\bin\Debug\netcoreapp3.1\BowlingCollections.dll
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\bin\Debug\netcoreapp3.1\BowlingCollections.pdb
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\obj\Debug\netcoreapp3.1\BowlingCollections.csprojAssemblyReference.cache
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\obj\Debug\netcoreapp3.1\BowlingCollections.AssemblyInfoInputs.cache
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\obj\Debug\netcoreapp3.1\BowlingCollections.AssemblyInfo.cs
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\obj\Debug\netcoreapp3.1\BowlingCollections.csproj.CoreCompileInputs.cache
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\obj\Debug\netcoreapp3.1\BowlingCollections.dll
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\obj\Debug\netcoreapp3.1\BowlingCollections.pdb
+C:\repos\c-#-instruction\BowlingCollectionsSolution\BowlingCollections\obj\Debug\netcoreapp3.1\BowlingCollections.genruntimeconfig.cache

@@ -6,15 +6,14 @@ namespace BowlingCollections
 {
     class Bowling
     {
+        Random rnd = new Random();
         List<int> game = new List<int>();
 
         public int Bowl()
         {
             for (var idx = 1; idx <= 10; idx++)
             {
-                Console.Write($"Enter score for frame {idx};");
-                var scoreStr = Console.ReadLine();
-                var score = Convert.ToInt32(scoreStr);
+                var score = rnd.Next(31);
                 game.Add(score);
             }
             var total = 0;
