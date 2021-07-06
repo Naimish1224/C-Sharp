@@ -9,6 +9,14 @@ namespace Banking
         public decimal InterestRate { get; set; } = 0.12m;
         private static decimal MinBalance { get; set; } = 200.0m;
 
+        public override void Withdraw(decimal Amount)
+        {   if (Balance - Amount < MinBalance)
+            {
+                throw new Exception($"Amount to withdraw must be < {Balance - MinBalance}");
+            }
+            base.Withdraw(Amount);
+        }
+
         public decimal CalculateInterest(int Months)
         {
             var InterestAmount = Balance * (InterestRate / 12) * Months;
@@ -26,7 +34,7 @@ namespace Banking
             return savings;
         }
         private Savings() {}
-        public Savings(decimal OpenAmountDeposit) {
+        public Savings(decimal OpenAmountDeposit) : base() {
             if (OpenAmountDeposit < MinBalance)
             {
                 throw new Exception($"Opening savings requires {MinBalance} deposit.");

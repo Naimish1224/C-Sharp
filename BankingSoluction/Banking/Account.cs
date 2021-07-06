@@ -6,9 +6,19 @@ namespace Banking
 {
     class Account
     {
-        public int Id { get; set; }
-        public string Description { get; set; }
+        private static int nextId = 1;
+        public int Id { get; protected set; }
+        public string Description { get; set; } = "New Acct";
         public decimal Balance { get; private set; } = 0;
+        public Account()
+        {
+            Id = nextId++;
+        }
+        public static void Transfer(decimal Amount, Account FromAccount, Account ToAccount)
+        {
+            FromAccount.Withdraw(Amount);
+            ToAccount.Deposit(Amount);
+        }
 
         public void Deposit(decimal Amount)
         {   
