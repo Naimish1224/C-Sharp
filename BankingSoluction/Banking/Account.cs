@@ -18,7 +18,7 @@ namespace Banking
             }
             Balance += Amount;
         }
-        public void Withdraw(decimal Amount)
+        public virtual void Withdraw(decimal Amount)
         {
             if (Amount <= 0)
             {
