@@ -1,0 +1,13 @@
+C:\repos\c-#-instruction\BankingSoluction\Banking\bin\Debug\netcoreapp3.1\Banking.exe
+C:\repos\c-#-instruction\BankingSoluction\Banking\bin\Debug\netcoreapp3.1\Banking.deps.json
+C:\repos\c-#-instruction\BankingSoluction\Banking\bin\Debug\netcoreapp3.1\Banking.runtimeconfig.json
+C:\repos\c-#-instruction\BankingSoluction\Banking\bin\Debug\netcoreapp3.1\Banking.runtimeconfig.dev.json
+C:\repos\c-#-instruction\BankingSoluction\Banking\bin\Debug\netcoreapp3.1\Banking.dll
+C:\repos\c-#-instruction\BankingSoluction\Banking\bin\Debug\netcoreapp3.1\Banking.pdb
+C:\repos\c-#-instruction\BankingSoluction\Banking\obj\Debug\netcoreapp3.1\Banking.csprojAssemblyReference.cache
+C:\repos\c-#-instruction\BankingSoluction\Banking\obj\Debug\netcoreapp3.1\Banking.AssemblyInfoInputs.cache
+C:\repos\c-#-instruction\BankingSoluction\Banking\obj\Debug\netcoreapp3.1\Banking.AssemblyInfo.cs
+C:\repos\c-#-instruction\BankingSoluction\Banking\obj\Debug\netcoreapp3.1\Banking.csproj.CoreCompileInputs.cache
+C:\repos\c-#-instruction\BankingSoluction\Banking\obj\Debug\netcoreapp3.1\Banking.dll
+C:\repos\c-#-instruction\BankingSoluction\Banking\obj\Debug\netcoreapp3.1\Banking.pdb
+C:\repos\c-#-instruction\BankingSoluction\Banking\obj\Debug\netcoreapp3.1\Banking.genruntimeconfig.cache
