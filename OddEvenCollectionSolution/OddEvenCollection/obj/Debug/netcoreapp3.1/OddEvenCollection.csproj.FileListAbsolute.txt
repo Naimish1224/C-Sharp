@@ -1,0 +1,13 @@
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\bin\Debug\netcoreapp3.1\OddEvenCollection.exe
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\bin\Debug\netcoreapp3.1\OddEvenCollection.deps.json
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\bin\Debug\netcoreapp3.1\OddEvenCollection.runtimeconfig.json
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\bin\Debug\netcoreapp3.1\OddEvenCollection.runtimeconfig.dev.json
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\bin\Debug\netcoreapp3.1\OddEvenCollection.dll
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\bin\Debug\netcoreapp3.1\OddEvenCollection.pdb
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\obj\Debug\netcoreapp3.1\OddEvenCollection.csprojAssemblyReference.cache
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\obj\Debug\netcoreapp3.1\OddEvenCollection.AssemblyInfoInputs.cache
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\obj\Debug\netcoreapp3.1\OddEvenCollection.AssemblyInfo.cs
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\obj\Debug\netcoreapp3.1\OddEvenCollection.csproj.CoreCompileInputs.cache
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\obj\Debug\netcoreapp3.1\OddEvenCollection.dll
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\obj\Debug\netcoreapp3.1\OddEvenCollection.pdb
+C:\repos\c-#-instruction\OddEvenCollectionSolution\OddEvenCollection\obj\Debug\netcoreapp3.1\OddEvenCollection.genruntimeconfig.cache
