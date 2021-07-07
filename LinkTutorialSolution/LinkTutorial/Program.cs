@@ -6,6 +6,12 @@ namespace LinkTutorial
     {
         static void Main(string[] args)
         {
+            int[] ints2 = new int[] { 9879, 5134, 4662, 6558, 6951 };
+            var foursum = ints2.Sum() - ints2.Min();
+            var foursum2 = ints2.Sum() - ints2.Max();
+            Console.WriteLine(foursum + "is the biggest total of any four number!");
+            Console.WriteLine(foursum + "is the smallest total of any four number!");
+
             int[] ints = new int[] 
             {
              9879,5134,4662,6558,6951,6997,4634,9757,1691,8777,
@@ -23,6 +29,13 @@ namespace LinkTutorial
             Console.WriteLine(countOfEven + " Even Numbers.");
             var sumOfEven = ints.Where(i => i % 2 == 0).Sum();
             Console.WriteLine(sumOfEven + " Even Numbers.");
+            var max = ints.Max();
+            Console.WriteLine(max + " is the max no.");
+            var min = ints.Min();
+            Console.WriteLine(min + " is the min no.");
+
+            var eved = ints.Count(i => i % 5 == 0 || i % 7 == 0);
+            Console.WriteLine(eved + " are evenly div by 5 or 7.");
         }
     }
 }
