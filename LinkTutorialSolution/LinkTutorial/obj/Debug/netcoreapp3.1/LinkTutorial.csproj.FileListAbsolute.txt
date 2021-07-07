@@ -1,0 +1,13 @@
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\bin\Debug\netcoreapp3.1\LinkTutorial.exe
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\bin\Debug\netcoreapp3.1\LinkTutorial.deps.json
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\bin\Debug\netcoreapp3.1\LinkTutorial.runtimeconfig.json
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\bin\Debug\netcoreapp3.1\LinkTutorial.runtimeconfig.dev.json
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\bin\Debug\netcoreapp3.1\LinkTutorial.dll
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\bin\Debug\netcoreapp3.1\LinkTutorial.pdb
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\obj\Debug\netcoreapp3.1\LinkTutorial.csprojAssemblyReference.cache
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\obj\Debug\netcoreapp3.1\LinkTutorial.AssemblyInfoInputs.cache
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\obj\Debug\netcoreapp3.1\LinkTutorial.AssemblyInfo.cs
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\obj\Debug\netcoreapp3.1\LinkTutorial.csproj.CoreCompileInputs.cache
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\obj\Debug\netcoreapp3.1\LinkTutorial.dll
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\obj\Debug\netcoreapp3.1\LinkTutorial.pdb
+C:\repos\c-#-instruction\LinkTutorialSolution\LinkTutorial\obj\Debug\netcoreapp3.1\LinkTutorial.genruntimeconfig.cache
