@@ -1,16 +1,38 @@
-﻿using System;
+﻿using SqlServerLibrary;
+using System;
 using System.Linq;
 namespace LinkTutorial
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) {
+            
+            var sqllib = new SqlServerLib();
+            sqllib.Connect("localhost\\Sqlexpress", "PRS");
+            var users = sqllib.UserGetAll();
+            sqllib.Disconnect();
+            var sortedusers = from u in users
+                              orderby u.Username descending
+                              select new
+                              {
+                                  PK = u.ID,
+                                  Login = u.Username
+                              };
+            foreach(var user in sortedusers)
+            {
+                Console.WriteLine($"{user.PK} | {user.Lo}");
+            }
+
+
+        }
+
+        static void Linq()
         {
             int[] ints2 = new int[] { 9879, 5134, 4662, 6558, 6951 };
             var foursum = ints2.Sum() - ints2.Min();
             var foursum2 = ints2.Sum() - ints2.Max();
             Console.WriteLine(foursum + "is the biggest total of any four number!");
-            Console.WriteLine(foursum + "is the smallest total of any four number!");
+            Console.WriteLine(foursum2 + "is the smallest total of any four number!");
 
             int[] ints = new int[] 
             {
