@@ -6,7 +6,7 @@ namespace LinkTutorial
     class Program
     {
         static void Main(string[] args) {
-            
+
             var sqllib = new SqlServerLib();
             sqllib.Connect("localhost\\Sqlexpress", "PRS");
             var users = sqllib.UserGetAll();
@@ -20,7 +20,7 @@ namespace LinkTutorial
                               };
             foreach(var user in sortedusers)
             {
-                Console.WriteLine($"{user.PK} | {user.Lo}");
+                Console.WriteLine($"{user.PK} | {user.Login}");
             }
 
 
