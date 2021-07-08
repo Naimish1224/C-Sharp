@@ -5,7 +5,8 @@ namespace EntityFrameworkCoreDDFirst.Models
     public class AppDbContext : DbContext
     {
         public DbSet<Customer> Customers { get; set; }
-
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderLine> Orderlines { get; set; }
         public AppDbContext() { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)

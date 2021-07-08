@@ -7,46 +7,42 @@ using System.Text;
 
 namespace EntityFrameworkCoreDDFirst.Controller
 {
-    public class CustomersController
+    class OrdersController
     {
         readonly AppDbContext _context;
-
-        public List<Customer> GetAll()
-        {
-            return _context.Customers.ToList();
-        }
-
-        public Customer GetByID(int id)
-        {
-            return _context.Customers.Find(id);
-        }
-        public CustomersController()
+        public OrdersController()
         {
             _context = new AppDbContext();
         }
-
-        public Customer Add(Customer customer)
+        public List<Order> GetAll()
         {
-            if (customer == null)
+            return _context.Orders.ToList();
+        }
+        public Order GetByID(int id)
+        {
+            return _context.Orders.Find(id);
+        }
+        public Order Add(Order order)
+        {
+            if (order == null)
             {
                 return null;
             }
-            _context.Customers.Add(customer);
+            _context.Orders.Add(order);
             var rowsAffected = _context.SaveChanges();
             if (rowsAffected != 1)
             {
                 return null;
             }
-            return customer;
+            return order;
         }
-
-        public bool Update(Customer customer)
+        public bool Update(Order order)
         {
-            if (customer == null)
+            if (order == null)
             {
                 return false;
             }
-            _context.Entry(customer).State = EntityState.Modified;
+            _context.Entry(order).State = EntityState.Modified;
             var rc = _context.SaveChanges();
             if (rc != 1)
             {
@@ -54,24 +50,20 @@ namespace EntityFrameworkCoreDDFirst.Controller
             }
             return true;
         }
-
-    public Customer Delete(int id)
+        public Order Delete(int id)
         {
-            var cust = _context.Customers.Find(id);
-            if (cust == null)
+            var ord = _context.Orders.Find(id);
+            if (ord == null)
             {
                 return null;
             }
-            _context.Remove(cust);
+            _context.Remove(ord);
             var rc = _context.SaveChanges();
             if (rc != 1)
             {
                 return null;
             }
-            return cust;
+            return ord;
         }
-        
-
-
     }
 }
