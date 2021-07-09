@@ -130,3 +130,4 @@ C:\repos\c-#-instruction\BmdbWebApi\BmdbWebApi\bin\Debug\netcoreapp3.1\ru\Micros
 C:\repos\c-#-instruction\BmdbWebApi\BmdbWebApi\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\repos\c-#-instruction\BmdbWebApi\BmdbWebApi\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\repos\c-#-instruction\BmdbWebApi\BmdbWebApi\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\repos\c-#-instruction\BmdbWebApi\BmdbWebApi\obj\Debug\netcoreapp3.1\BmdbWebApi.csprojAssemblyReference.cache

@@ -1,12 +1,10 @@
-﻿using System;
+﻿using BmdbWebApi.Data;
+using BmdbWebApi.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using BmdbWebApi.Data;
-using BmdbWebApi.Models;
 
 namespace BmdbWebApi.Controllers
 {
