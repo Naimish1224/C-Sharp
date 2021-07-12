@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrsWebApi.Data;
 
 namespace PrsWebApi.Migrations
 {
     [DbContext(typeof(PrsWebApiContext))]
-    partial class PrsWebApiContextModelSnapshot : ModelSnapshot
+    [Migration("20210712180435_add migration")]
+    partial class addmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

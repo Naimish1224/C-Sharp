@@ -24,6 +24,8 @@ namespace BmdbWebApi.Models
         public bool Reviewer { get; set; }
         public bool Admin { get; set; }
 
+        
+
 
     }
 }

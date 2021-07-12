@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrsWebApi.Data;
 
 namespace PrsWebApi.Migrations
 {
     [DbContext(typeof(PrsWebApiContext))]
-    partial class PrsWebApiContextModelSnapshot : ModelSnapshot
+    [Migration("20210712154506_unique")]
+    partial class unique
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -78,13 +80,16 @@ namespace PrsWebApi.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("ProductID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(50);
 
                     b.Property<int>("Quantity")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(255);
 
                     b.Property<int>("RequestID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(50);
 
                     b.HasKey("ID");
 
@@ -115,13 +120,13 @@ namespace PrsWebApi.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("Unit")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(25)")
-                        .HasMaxLength(25);
+                    b.Property<int>("Unit")
+                        .HasColumnType("int")
+                        .HasMaxLength(6);
 
                     b.Property<int>("VendorID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(3);
 
                     b.HasKey("ID");
 
@@ -160,6 +165,7 @@ namespace PrsWebApi.Migrations
                         .HasMaxLength(150);
 
                     b.Property<string>("ReasonForRejection")
+                        .IsRequired()
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
@@ -172,7 +178,8 @@ namespace PrsWebApi.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("UserID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(30);
 
                     b.HasKey("ID");
 

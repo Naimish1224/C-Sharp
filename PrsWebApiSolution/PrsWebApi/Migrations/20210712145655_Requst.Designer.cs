@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrsWebApi.Data;
 
 namespace PrsWebApi.Migrations
 {
     [DbContext(typeof(PrsWebApiContext))]
-    partial class PrsWebApiContextModelSnapshot : ModelSnapshot
+    [Migration("20210712145655_Requst")]
+    partial class Requst
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,31 +66,7 @@ namespace PrsWebApi.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("UserName")
-                        .IsUnique();
-
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("PrsWebApi.Models.LineItem", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RequestID")
-                        .HasColumnType("int");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("LineItems");
                 });
 
             modelBuilder.Entity("PrsWebApi.Models.Product", b =>
@@ -115,18 +93,15 @@ namespace PrsWebApi.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("Unit")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(25)")
-                        .HasMaxLength(25);
+                    b.Property<int>("Unit")
+                        .HasColumnType("int")
+                        .HasMaxLength(6);
 
                     b.Property<int>("VendorID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(3);
 
                     b.HasKey("ID");
-
-                    b.HasIndex("PartNumber")
-                        .IsUnique();
 
                     b.ToTable("Products");
                 });
@@ -160,6 +135,7 @@ namespace PrsWebApi.Migrations
                         .HasMaxLength(150);
 
                     b.Property<string>("ReasonForRejection")
+                        .IsRequired()
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
@@ -172,7 +148,8 @@ namespace PrsWebApi.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("UserID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(30);
 
                     b.HasKey("ID");
 
@@ -227,9 +204,6 @@ namespace PrsWebApi.Migrations
                         .HasMaxLength(10);
 
                     b.HasKey("ID");
-
-                    b.HasIndex("Code")
-                        .IsUnique();
 
                     b.ToTable("Vendors");
                 });

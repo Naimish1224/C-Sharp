@@ -30,6 +30,8 @@ namespace PrsWebApi
 
             services.AddDbContext<PrsWebApiContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("PrsDbContext")));
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

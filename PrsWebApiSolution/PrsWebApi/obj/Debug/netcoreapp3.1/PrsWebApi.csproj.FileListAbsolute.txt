@@ -130,4 +130,3 @@ C:\repos\c-#-instruction\PrsWebApiSolution\PrsWebApi\obj\Debug\netcoreapp3.1\Prs
 C:\repos\c-#-instruction\PrsWebApiSolution\PrsWebApi\obj\Debug\netcoreapp3.1\PrsWebApi.dll
 C:\repos\c-#-instruction\PrsWebApiSolution\PrsWebApi\obj\Debug\netcoreapp3.1\PrsWebApi.pdb
 C:\repos\c-#-instruction\PrsWebApiSolution\PrsWebApi\obj\Debug\netcoreapp3.1\PrsWebApi.genruntimeconfig.cache
-C:\repos\c-#-instruction\PrsWebApiSolution\PrsWebApi\obj\Debug\netcoreapp3.1\PrsWebApi.csprojAssemblyReference.cache

@@ -10,16 +10,15 @@ namespace PrsWebApi.Models
     public class Product
     {
         public int ID { get; set; }
-        [StringLength(3), Required]
         public int VendorID { get; set; }
         [StringLength(15), Required]
         public string PartNumber { get; set; }
         [StringLength(250), Required]
         public string Name { get; set; }
-        [ColumnAttribute(), Required]
+        [Column(TypeName = "decimal(12,2)")]
         public decimal Price { get; set; }
-        [StringLength(6), Required]
-        public int Unit { get; set; }
+        [StringLength(25), Required]
+        public string Unit { get; set; }
         [StringLength(250)]
         public string PhotoPath { get; set; }
     }

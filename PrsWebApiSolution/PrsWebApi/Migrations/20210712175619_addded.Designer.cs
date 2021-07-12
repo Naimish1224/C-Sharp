@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrsWebApi.Data;
 
 namespace PrsWebApi.Migrations
 {
     [DbContext(typeof(PrsWebApiContext))]
-    partial class PrsWebApiContextModelSnapshot : ModelSnapshot
+    [Migration("20210712175619_addded")]
+    partial class addded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -78,13 +80,16 @@ namespace PrsWebApi.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("ProductID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(50);
 
                     b.Property<int>("Quantity")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(255);
 
                     b.Property<int>("RequestID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(50);
 
                     b.HasKey("ID");
 
