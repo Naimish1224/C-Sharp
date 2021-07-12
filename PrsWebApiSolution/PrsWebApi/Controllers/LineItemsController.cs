@@ -28,6 +28,8 @@ namespace PrsWebApi.Controllers
             return await _context.LineItems.ToListAsync();
         }
 
+
+
         // GET: api/LineItems/5
         [HttpGet("{id}")]
         public async Task<ActionResult<LineItem>> GetLineItem(int id)
@@ -106,6 +108,8 @@ namespace PrsWebApi.Controllers
         {
             return _context.LineItems.Any(e => e.ID == id);
         }
+
+        private string CalculateSubTotal;
 
         
         
