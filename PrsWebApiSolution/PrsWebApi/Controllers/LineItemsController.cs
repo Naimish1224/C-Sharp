@@ -119,16 +119,18 @@ namespace PrsWebApi.Controllers
         //recalculate total
         public async Task RecalculateTotal(int requestID)
         {
-            var request = await _context.Requests.FindAsync(requestID);
-            request.Total = (from l in _context.LineItems
-                             join p in _context.Products on l.ProductID equals p.ID
-                             where l.RequestID == requestID
-                             select new { Total = l.Quantity * p.Price })
-                             .Sum(x => x.Total);
-            var rc = await _context.SaveChangesAsync();
-            if (rc != 1) throw new Exception("Error recalculating total.");
+                var request = await _context.Requests.FindAsync(requestID);
+                request.Total = (from l in _context.LineItems
+                                 join p in _context.Products on l.ProductID equals p.ID
+                                 where l.RequestID == requestID
+                                 select new { Total = l.Quantity * p.Price })
+                                 .Sum(x => x.Total);
+                var rc = await _context.SaveChangesAsync();
+                if (rc != 1) throw new Exception("Fatal Error: Did not calculate.");
             
         }
+
+        
 
 
 
