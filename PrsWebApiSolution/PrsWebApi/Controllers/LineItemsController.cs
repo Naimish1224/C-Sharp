@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PrsWebApi.Data;
 using PrsWebApi.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PrsWebApi.Controllers
 {
@@ -119,18 +118,18 @@ namespace PrsWebApi.Controllers
         //recalculate total
         public async Task RecalculateTotal(int requestID)
         {
-                var request = await _context.Requests.FindAsync(requestID);
-                request.Total = (from l in _context.LineItems
-                                 join p in _context.Products on l.ProductID equals p.ID
-                                 where l.RequestID == requestID
-                                 select new { Total = l.Quantity * p.Price })
-                                 .Sum(x => x.Total);
-                var rc = await _context.SaveChangesAsync();
-                if (rc != 1) throw new Exception("Fatal Error: Did not calculate.");
-            
+            var request = await _context.Requests.FindAsync(requestID);
+            request.Total = (from l in _context.LineItems
+                             join p in _context.Products on l.ProductID equals p.ID
+                             where l.RequestID == requestID
+                             select new { Total = l.Quantity * p.Price })
+                             .Sum(x => x.Total);
+            var rc = await _context.SaveChangesAsync();
+            if (rc != 1) throw new Exception("Fatal Error: Did not calculate.");
+
         }
 
-        
+
 
 
 

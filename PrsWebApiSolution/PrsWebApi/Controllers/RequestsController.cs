@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PrsWebApi.Data;
 using PrsWebApi.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PrsWebApi.Controllers
 {
@@ -103,9 +101,9 @@ namespace PrsWebApi.Controllers
         {
             request.Status = request.Total <= 50 ? "Approved" : "Review";
             return await PutRequest(id, request);
-            
+
         }
-        
+
 
         // POST: api/Requests
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
