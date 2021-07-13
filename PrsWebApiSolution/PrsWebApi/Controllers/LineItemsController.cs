@@ -43,6 +43,13 @@ namespace PrsWebApi.Controllers
 
             return lineItem;
         }
+        // GET: api/LineItems/LineItemsPr
+        [HttpGet("line-items/lines-for-pr/{id}")]
+        public async Task<ActionResult<IEnumerable<LineItem>>> GetLineItemsForPr(int id)
+        {
+            return await _context.LineItems.Where(p => p.RequestID == id).ToListAsync();
+        }
+
 
         // PUT: api/LineItems/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
@@ -72,7 +79,7 @@ namespace PrsWebApi.Controllers
                     throw;
                 }
             }
-
+            await RecalculateTotal(lineItem.RequestID);
             return NoContent();
         }
 
@@ -109,9 +116,24 @@ namespace PrsWebApi.Controllers
             return _context.LineItems.Any(e => e.ID == id);
         }
 
-        private string CalculateSubTotal;
+        //recalculate total
+        public async Task RecalculateTotal(int requestID)
+        {
+            var request = await _context.Requests.FindAsync(requestID);
+            request.Total = (from l in _context.LineItems
+                             join p in _context.Products on l.ProductID equals p.ID
+                             where l.RequestID == requestID
+                             select new { Total = l.Quantity * p.Price })
+                             .Sum(x => x.Total);
+            var rc = await _context.SaveChangesAsync();
+            if (rc != 1) throw new Exception("Error recalculating total.");
+            
+        }
 
-        
-        
+
+
+
+
+
     }
 }

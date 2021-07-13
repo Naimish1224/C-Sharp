@@ -41,23 +41,15 @@ namespace PrsWebApi.Controllers
 
             return user;
         }
-        //// GET: api/Users/{username}{password}
-        //[HttpGet("{username}/{password}")]
-        //public async Task<ActionResult<User>> GetUserForLogin(int id)(string username, string password)
-        //{
-        //    var user = await _context.Users.SingleOrDefaultAsync(u => u.UserName.ToLower() == username.Tolower()
-        //                                                    && u.Password == password);
+        //Post/login
+        [HttpPut("/login")]
+        public async Task<ActionResult<User>> PostLoginAsync(string un, string pass)
+        {
+            var status = await _context.Users.SingleAsync(s => s.UserName == un && s.Password == pass);
+            return status;
+        }
 
-        //    if (user == null)
-        //    {
-        //    }
 
-        //    return user;
-        //}
-
-        // PUT: api/Users/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(int id, User user)
         {

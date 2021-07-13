@@ -42,6 +42,30 @@ namespace PrsWebApi.Controllers
             return request;
         }
 
+        //GET: api/list-review/{id}
+        [HttpGet("/list-review/{id}")]
+        public async Task<ActionResult<IEnumerable<Request>>> GetRequestsByStatus(int id)
+        {
+            var status = _context.Requests.Where(s => s.Status == "Review" && s.ID != id).ToListAsync();
+            return await status;
+        }
+
+        //api/Approve
+        [HttpPut("approve")]
+        public async Task<IActionResult> RequestApprove(Request request)
+        {
+            request.Status = "Approved";
+            return await PutRequest(request.ID, request);
+        }
+
+        //api/Reject
+        [HttpPut("reject")]
+        public async Task<IActionResult> RequestRejected(Request request)
+        {
+            request.Status = "Rejected";
+            return await PutRequest(request.ID, request);
+        }
+
         // PUT: api/Requests/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -73,6 +97,15 @@ namespace PrsWebApi.Controllers
 
             return NoContent();
         }
+        //Put {/submit review}
+        [HttpPut("/submit-review")]
+        public async Task<IActionResult> SubmitReview(int id, Request request)
+        {
+            request.Status = request.Total <= 50 ? "Approved" : "Review";
+            return await PutRequest(id, request);
+            
+        }
+        
 
         // POST: api/Requests
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
