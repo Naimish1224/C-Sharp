@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BmdbWebApi.Models;
 using Microsoft.EntityFrameworkCore;
-using BmdbWebApi.Models;
 using PrsWebApi.Models;
 
 namespace PrsWebApi.Data
 {
     public class PrsWebApiContext : DbContext
     {
-        public PrsWebApiContext (DbContextOptions<PrsWebApiContext> options)
+        public PrsWebApiContext(DbContextOptions<PrsWebApiContext> options)
             : base(options)
         {
         }
