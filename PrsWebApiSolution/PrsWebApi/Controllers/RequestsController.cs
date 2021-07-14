@@ -44,8 +44,13 @@ namespace PrsWebApi.Controllers
         [HttpGet("/list-review/{id}")]
         public async Task<ActionResult<IEnumerable<Request>>> GetRequestsByStatus(int id)
         {
-            var status = _context.Requests.Where(s => s.Status == "Review" && s.ID != id).ToListAsync();
-            return await status;
+            var un = _context.Requests.Where(s => s.Status == "Review" && s.ID != id).ToListAsync();
+            if (un == null)
+            {
+                return NotFound();
+            }
+
+            return await un;
         }
 
         //api/Approve
