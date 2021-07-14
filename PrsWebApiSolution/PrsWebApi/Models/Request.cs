@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BmdbWebApi.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,6 +12,7 @@ namespace PrsWebApi.Models
     {
         public int ID { get; set; }
         public int UserID { get; set; }
+        public virtual User user { get; set; }
         [StringLength(200), Required]
         public string Description { get; set; }
         [StringLength(150), Required]

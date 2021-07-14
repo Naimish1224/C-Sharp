@@ -24,7 +24,8 @@ namespace PrsWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<LineItem>>> GetLineItems()
         {
-            return await _context.LineItems.ToListAsync();
+            return await _context.LineItems.Include(x => x.product).
+                Include(y => y.request).ToListAsync();
         }
 
 
@@ -43,7 +44,7 @@ namespace PrsWebApi.Controllers
             return lineItem;
         }
         // GET: api/LineItems/LineItemsPr
-        [HttpGet("line-items/lines-for-pr/{id}")]
+        [HttpGet("lines-for-pr/{id}")]
         public async Task<ActionResult<IEnumerable<LineItem>>> GetLineItemsForPr(int id)
         {
             return await _context.LineItems.Where(p => p.RequestID == id).ToListAsync();

@@ -11,6 +11,7 @@ namespace PrsWebApi.Models
     {
         public int ID { get; set; }
         public int VendorID { get; set; }
+        public virtual Vendor Vendor { get; set; }
         [StringLength(15), Required]
         public string PartNumber { get; set; }
         [StringLength(250), Required]

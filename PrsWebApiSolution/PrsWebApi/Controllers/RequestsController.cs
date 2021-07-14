@@ -23,7 +23,7 @@ namespace PrsWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Request>>> GetRequests()
         {
-            return await _context.Requests.ToListAsync();
+            return await _context.Requests.Include(x => x.user).ToListAsync();
         }
 
         // GET: api/Requests/5
